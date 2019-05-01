@@ -1,6 +1,8 @@
 ---
 layout: page
-title: 'Tag Index'
+title: 'Index'
+bigimg:
+- "/img/big-imgs/index.jpg" : "caption text"
 ---
 
 {%- capture site_tags -%}
@@ -25,7 +27,7 @@ title: 'Tag Index'
             <div class="tag-entry">
                 <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
                 <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%B %d, %Y" -}}</time>
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%b %d, %Y" -}}</time>
                 </div>
             </div>
         {%- endfor -%}
